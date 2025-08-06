@@ -7,7 +7,7 @@ function BasicProps() {
   return (
     <div>
         <Props1 data1={"data1"} data2={"data2"}/>
-        <Props2 data3={"data3"} data4={"data4"}/>
+        <Props2 data3={"data3"} data4={"data4"} data5={"data5"} data6={"data6"}/>
 
         {/* 자식요소를 매개변수로 전달 */}
         <Props3 ch1={<div>자식요소1</div>}>
