@@ -1,9 +1,9 @@
-import './App.css'
-import BaxisJsx from './components/BasicJsx/BaxisJsx'
-import BasicProps from './components/BasicProps/BasicProps'
-import BasicReact from './components/BasicReact/BasicReact'
-import Calculator from './components/BasicState/Calculator/Calculator'
-import CountState from './components/BasicState/CountState/CountState'
+import "./App.css";
+import BaxisJsx from "./components/BasicJsx/BaxisJsx";
+import BasicProps from "./components/BasicProps/BasicProps";
+import BasicReact from "./components/BasicReact/BasicReact";
+import Calculator from "./components/BasicState/Calculator/Calculator";
+import CountState from "./components/BasicState/CountState/CountState";
 
 //초기 화면 구성
 function App() {
@@ -13,10 +13,10 @@ function App() {
       {/* <BasicReact /> */}
       {/* <BaxisJsx /> */}
       {/* <BasicProps /> */}
-      {/* <CountState /> */}
-      <Calculator />
+      <CountState />
+      {/* <Calculator /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

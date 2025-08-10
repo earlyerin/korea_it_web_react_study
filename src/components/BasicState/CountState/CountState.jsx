@@ -1,22 +1,26 @@
-import { useState } from "react"
+import { useState } from "react";
+import CountHeader from "../CountHeader/CountHeader";
+import CountButton from "../CountButton/CountButton";
 
 function CountState() {
-  const [count, setCount] = useState(0); 
+  console.log("CountState Randering...");
+  const [count, setCount] = useState(0);
 
-    const handleOnClick = (value) => {
-      const num = parseInt(value);
-      setCount(num + count);
-      // document.querySelector("h1").innerText = count;
-      console.log("Count:", num + count);
-    }
+  const handleOnClick = (value) => {
+    const num = Number(value);
+    setCount((prev) => num + prev); //전 상태값을 인자로 받아 처리(fucntional update)
+    // document.querySelector("h1").innerText = count;
+    console.log("Count:", num + count);
+  };
 
+  //HTML요소 컴포넌트화
   return (
     <div>
-        <h1>Count ➜ {count}</h1>
-        <button value={1} onClick={(e) => handleOnClick(e.target.value)}>+1</button>
-        <button value={-1} onClick={(e) => handleOnClick(e.target.value)}>-1</button>
+      <CountHeader count={count} />
+      <CountButton value={1} onClick={handleOnClick} text="+1" />
+      <CountButton value={-1} onClick={handleOnClick} text="-1" />
     </div>
-  )
+  );
 }
 
-export default CountState
+export default CountState;
