@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import BaxisJsx from "./components/BasicJsx/BaxisJsx";
 import BasicProps from "./components/BasicProps/BasicProps";
 import BasicReact from "./components/BasicReact/BasicReact";
@@ -19,6 +19,7 @@ import Render from "./components/LifeCycle/Render";
 import FruitsFilter from "./components/Practice/FruitsFilter";
 import SignupForm from "./components/Practice/SignupForm";
 import UserProfile from "./components/Practice/UserProfile";
+import Index from "./components/TodoList/pages";
 
 //초기 화면 구성
 function App() {
@@ -43,8 +44,9 @@ function App() {
       {/* <FruitsFilter /> */}
       {/* <UserProfile /> */}
       {/* <SignupForm /> */}
-      <Emotion1 />
-      <Emotion2 />
+      {/* <Emotion1 /> */}
+      {/* <Emotion2 /> */}
+      <Index />
     </>
   );
 }

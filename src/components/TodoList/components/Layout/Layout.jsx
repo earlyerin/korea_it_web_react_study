@@ -1,10 +1,13 @@
 import Header from "../Header/Header";
 import * as s from "./styles";
 /** @jsxImportSource @emotion/react */
-function Layout() {
+function Layout({ children }) {
   return (
     <div css={s.layout}>
-      <Header />
+      <div css={s.container}>
+        <Header />
+        {children}
+      </div>
     </div>
   );
 }
