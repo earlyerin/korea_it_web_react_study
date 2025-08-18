@@ -19,7 +19,7 @@ import Render from "./components/LifeCycle/Render";
 import FruitsFilter from "./components/Practice/FruitsFilter";
 import SignupForm from "./components/Practice/SignupForm";
 import UserProfile from "./components/Practice/UserProfile";
-import Index from "./components/TodoList/pages";
+import Index from "./components/TodoList/pages/Index";
 
 //초기 화면 구성
 function App() {
