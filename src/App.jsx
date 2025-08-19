@@ -1,4 +1,5 @@
 // import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 import BaxisJsx from "./components/BasicJsx/BaxisJsx";
 import BasicProps from "./components/BasicProps/BasicProps";
 import BasicReact from "./components/BasicReact/BasicReact";
@@ -20,12 +21,16 @@ import FruitsFilter from "./components/Practice/FruitsFilter";
 import SignupForm from "./components/Practice/SignupForm";
 import UserProfile from "./components/Practice/UserProfile";
 import Index from "./components/TodoList/pages/Index";
+import Router1 from "./RouterStudy/Router1/Router1";
+import Router2 from "./RouterStudy/Router2/Router2";
+import Router3 from "./RouterStudy/Router3/Router3";
+import Router4 from "./RouterStudy/Router4/Router4";
 
 //초기 화면 구성
 function App() {
   //JSX 컴포넌트 호출
   return (
-    <>
+    <BrowserRouter>
       {/* <BasicReact /> */}
       {/* <BaxisJsx /> */}
       {/* <BasicProps /> */}
@@ -46,8 +51,12 @@ function App() {
       {/* <SignupForm /> */}
       {/* <Emotion1 /> */}
       {/* <Emotion2 /> */}
-      <Index />
-    </>
+      {/* <Index /> */}
+      {/* <Router1 /> */}
+      {/* <Router2 /> */}
+      {/* <Router3 /> */}
+      <Router4 />
+    </BrowserRouter>
   );
 }
 
